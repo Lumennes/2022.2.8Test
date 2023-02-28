@@ -149,7 +149,7 @@ jobs:
           unityVersion: ${{ matrix.unityVersion }}
           buildName: ${{ matrix.projectName }}
           targetPlatform: ${{ matrix.targetPlatform }}
-          buildMethod: UnityBuilderAction.BuildScript.Build
+          #buildMethod: UnityBuilderAction.BuildScript.Build
           #customParameters: -profile SomeProfile -someBoolean -someValue exampleValue
           #cloudRunnerCluster: ${{ matrix.cloudRunnerCluster }}
           allowDirtyBuild: true

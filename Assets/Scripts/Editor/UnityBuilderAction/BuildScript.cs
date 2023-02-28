@@ -17,6 +17,7 @@ namespace UnityBuilderAction
         private static readonly string[] Secrets =
             {"androidKeystorePass", "androidKeyaliasName", "androidKeyaliasPass"};
 
+        [MenuItem("Window/Asset Management/Addressables/Build Addressables and Player")]
         public static void Build()
         {
             // Gather values from args
@@ -271,7 +272,7 @@ namespace UnityBuilderAction
             return success;
         }
 
-        // [MenuItem("Window/Asset Management/Addressables/Build Addressables only")]
+        [MenuItem("Window/Asset Management/Addressables/Build Addressables only")]
         public static bool BuildAddressables()
         {
             getSettingsObject(settings_asset);
